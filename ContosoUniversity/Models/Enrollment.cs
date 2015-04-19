@@ -5,16 +5,16 @@ using System.Web;
 
 namespace ContosoUniversity.Models
 {
-    public enum Grade
+    public enum Grade //enum is a property of Grade
     {
         A, B, C, D, F
     }
 
     public class Enrollment
     {
-        public int EnrollmentID { get; set; }
-        public int CourseID { get; set; }
-        public int StudentID { get; set; }
+        public int EnrollmentID { get; set; } //EnrollmentID is a primary key
+        public int CourseID { get; set; }  //CourseID is a foreign key, the navigation property is course 
+        public int StudentID { get; set; } //StudentID is a foreign key, the navigation property is student
         public Grade? Grade { get; set; }
 
         public virtual Course Course { get; set; }
