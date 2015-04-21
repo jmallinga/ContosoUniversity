@@ -53,7 +53,7 @@ namespace ContosoUniversity.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    db.Students.Add(student);
+                    db.Entry(student).State = EntityState.Modified;
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
