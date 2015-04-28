@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-   
+
 namespace ContosoUniversity.Logging
 {
-    public class ILogger
+    public interface ILogger
     {
         void Information(string message);
         void Information(string fmt, params object[] vars);
@@ -20,9 +20,9 @@ namespace ContosoUniversity.Logging
         void TraceApi(string componentName, string method, TimeSpan timespan, string properties);
         void TraceApi(string componentName, string method, TimeSpan timespan, string fmt, params object[] vars);
 
-        internal void TraceApi(string p1, string p2, TimeSpan timeSpan, string p3, string p4)
-        {
-            throw new NotImplementedException();
-        }
+  //       void TraceApi(string p1, string p2, TimeSpan timeSpan, string p3, string p4)
+   //     {
+     //       throw new NotImplementedException();
+       // }
     }
 }
