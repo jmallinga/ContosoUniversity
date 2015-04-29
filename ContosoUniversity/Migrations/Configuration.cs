@@ -62,7 +62,9 @@ namespace ContosoUniversity.Migrations
             
             foreach (Enrollment e in enrollments)
             {
-            var enrollmentInDataBase = context.Enrollments.Where(s => s.Student.ID == e.StudentID && s.Course.CourseID == e.CourseID).SingleOrDefault();
+            var enrollmentInDataBase = context.Enrollments.Where(s => 
+                s.Student.ID == e.StudentID && 
+                s.Course.CourseID == e.CourseID).SingleOrDefault();
             if (enrollmentInDataBase == null)
                 {
                     context.Enrollments.Add(e);
