@@ -1,4 +1,4 @@
-﻿using ContosoUniversity.Models;
+﻿using ContosoUniversity.Logging;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;

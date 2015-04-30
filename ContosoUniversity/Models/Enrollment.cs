@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ContosoUniversity.Models
+namespace ContosoUniversity.Logging
 {
     public enum Grade //enum is a property of Grade
     {
