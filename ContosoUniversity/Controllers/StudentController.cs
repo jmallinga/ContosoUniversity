@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.Logging;
+using ContosoUniversity.Models;
 using PagedList;
 using System.Data.Entity.Infrastructure;
 
