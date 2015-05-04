@@ -5,6 +5,9 @@ using System.Web;
 using System.Data.Entity;
 using ContosoUniversity.Logging;
 using ContosoUniversity.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 
 namespace ContosoUniversity.DAL

@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ContosoUniversity.DAL;
 using ContosoUniversity.ViewModels;
+using ContosoUniversity.Models;
 
 namespace ContosoUniversity.Controllers
 {
@@ -25,7 +26,9 @@ namespace ContosoUniversity.Controllers
             EnrollmentDate = dateGroup.Key,
             StudentCount = dateGroup.Count()
             };
-                        return View(data.ToList());        }
+            
+            return View(data.ToList());
+        }
 
         public ActionResult Contact()
         {
@@ -38,5 +41,6 @@ namespace ContosoUniversity.Controllers
         {
             db.Dispose();
             base.Dispose(disposing);
-        }    }
+        }
+    }
 }

@@ -1,16 +1,19 @@
-﻿using System;
+﻿using ContosoUniversity.DAL;
+using ContosoUniversity.Logging;
+using ContosoUniversity.Models;
+using PagedList;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using ContosoUniversity.DAL;
-using ContosoUniversity.Logging;
-using ContosoUniversity.Models;
-using PagedList;
-using System.Data.Entity.Infrastructure;
+
 
 namespace ContosoUniversity.Controllers
 {
